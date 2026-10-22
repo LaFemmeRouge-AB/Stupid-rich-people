@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://b0mh4yu2any50"]
+
+[ext_resource type="Texture2D" uid="uid://c1cvkawicn62i" path="res://Backgrounds/computerbackgroundold.webp" id="1_go733"]
+[ext_resource type="Script" uid="uid://bqf2w1vd8hb3q" path="res://scenes/computerboss.gd" id="1_xr2lb"]
+[ext_resource type="Texture2D" uid="uid://dmohxhcrv2h0f" path="res://oldicons/mailold.webp" id="2_6x7dy"]
+[ext_resource type="Texture2D" uid="uid://b5mnght0opcal" path="res://oldicons/olddock.png" id="2_mlosw"]
+[ext_resource type="Texture2D" uid="uid://djyswqawfy54o" path="res://oldicons/oldcontactsicon.webp" id="3_aeonc"]
+[ext_resource type="Texture2D" uid="uid://cnfuhj5hrjlgr" path="res://Placeholders/oldicons/oldfiles.webp" id="4_3f0np"]
+[ext_resource type="Texture2D" uid="uid://bgythjogr3xdx" path="res://oldicons/creeperface.jpg" id="4_mlosw"]
+[ext_resource type="Texture2D" uid="uid://b4gtupvd7ug1v" path="res://Placeholders/oldicons/oldappstore.png" id="6_xr2lb"]
+[ext_resource type="Texture2D" uid="uid://bx0eip8ta3mpc" path="res://oldicons/oldmessages.webp" id="7_mlosw"]
+[ext_resource type="Texture2D" uid="uid://pnq16oxu12p3" path="res://oldicons/oldmapsicon.webp" id="8_oxlbu"]
+
+[node name="computer" type="Node2D" unique_id=1329158531]
+script = ExtResource("1_xr2lb")
+
+[node name="computerbackground" type="TextureRect" parent="." unique_id=370179122]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -595.0
+offset_top = -331.0
+offset_right = 502.0
+offset_bottom = 338.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.1, 1)
+texture = ExtResource("1_go733")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Olddock" type="TextureRect" parent="." unique_id=1707214051]
+offset_left = -460.0
+offset_top = 217.0
+offset_right = 2663.3333
+offset_bottom = 545.0
+scale = Vector2(0.3, 0.2)
+texture = ExtResource("2_mlosw")
+metadata/_edit_use_anchors_ = true
+
+[node name="mail_button" type="Button" parent="." unique_id=28642271]
+offset_left = -313.0
+offset_top = 185.0
+offset_right = -105.0
+offset_bottom = 393.0
+scale = Vector2(0.355, 0.355)
+icon = ExtResource("2_6x7dy")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="contacts_button" type="Button" parent="." unique_id=1526188628]
+offset_left = 64.00012
+offset_top = 182.00003
+offset_right = 372.00012
+offset_bottom = 490.00003
+scale = Vector2(0.24, 0.24)
+icon = ExtResource("3_aeonc")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="minecraft_button" type="Button" parent="." unique_id=213947960]
+offset_left = 259.0
+offset_top = 188.0
+offset_right = 1347.0
+offset_bottom = 1276.0
+scale = Vector2(0.063, 0.063)
+icon = ExtResource("4_mlosw")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="files_button" type="Button" parent="." unique_id=1902048183]
+offset_left = -217.99994
+offset_top = 188.00003
+offset_right = -9.999939
+offset_bottom = 396.00003
+scale = Vector2(0.35, 0.35)
+icon = ExtResource("4_3f0np")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Messages" type="Button" parent="." unique_id=1834052064]
+offset_left = 158.0
+offset_top = 183.0
+offset_right = 366.0
+offset_bottom = 391.0
+scale = Vector2(0.37, 0.37)
+icon = ExtResource("7_mlosw")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Maps" type="Button" parent="." unique_id=1226580284]
+offset_left = -131.0
+offset_top = 182.0
+offset_right = 127.0
+offset_bottom = 440.0
+scale = Vector2(0.3, 0.3)
+icon = ExtResource("8_oxlbu")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Appstore" type="Button" parent="." unique_id=551932129]
+offset_left = -70.0
+offset_top = 176.0
+offset_right = 3778.0
+offset_bottom = 2344.0
+scale = Vector2(0.04, 0.04)
+icon = ExtResource("6_xr2lb")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=123890004]
+position = Vector2(-2, 2)
+
+[connection signal="pressed" from="mail_button" to="." method="_on_mail_pressed"]

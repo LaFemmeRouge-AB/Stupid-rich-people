@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://frqido8f1aei"]
+
+[ext_resource type="Texture2D" uid="uid://dejw126gq45vu" path="res://Placeholders/White-Placeholder.png" id="1_2jfsg"]
+
+[node name="Node2D" type="Node2D" unique_id=2126929530]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=447041713]
+position = Vector2(570, 332)
+
+[node name="WhitePlaceholder" type="Sprite2D" parent="." unique_id=1768296251]
+position = Vector2(563, 334)
+scale = Vector2(2.452, 1.412)
+texture = ExtResource("1_2jfsg")

@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://ktc5el4esrih"]
+
+[ext_resource type="Script" uid="uid://by36uawpcl3nu" path="res://elements/scripts/introscene.gd" id="1_smrvs"]
+[ext_resource type="FontFile" uid="uid://budn237aiq553" path="res://Fonts/squarefont/Square.ttf" id="2_bo6f2"]
+[ext_resource type="Script" uid="uid://c2fi4w2m5rr0f" path="res://elements/scripts/begin_button.gd" id="3_oblfw"]
+[ext_resource type="Script" uid="uid://clwa0gtko0rg7" path="res://elements/scripts/creditsbutton.gd" id="4_bg542"]
+[ext_resource type="PackedScene" uid="uid://chbuddoshxvxl" path="res://popupscenes/Settings.tscn" id="4_bo6f2"]
+[ext_resource type="PackedScene" uid="uid://2de65ecwggw6" path="res://popupscenes/Credits.tscn" id="5_x5gwx"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ovg0y"]
+load_path = "res://.godot/imported/Office.jpg-8e2b2c0b5b9335df06d7c0ff7653bf80.ctex"
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mucci"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7yax1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4hia4"]
+
+[node name="intro" type="Node2D" unique_id=515091908]
+script = ExtResource("1_smrvs")
+
+[node name="RobloxCharacterCreatorBackground" type="Sprite2D" parent="." unique_id=130515824]
+position = Vector2(588, 321)
+scale = Vector2(1.6061616, 1.5601851)
+texture = SubResource("CompressedTexture2D_ovg0y")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1672432749]
+offset_left = 28.0
+offset_top = 43.0
+offset_right = 1214.0
+offset_bottom = 313.0
+theme_override_colors/font_readonly_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
+theme_override_fonts/font = ExtResource("2_bo6f2")
+theme_override_font_sizes/font_size = 120
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mucci")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7yax1")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_4hia4")
+text = "Stupid Rich People
+"
+editable = false
+scroll_fit_content_height = true
+scroll_fit_content_width = true
+
+[node name="TextEdit" type="TextEdit" parent="TextEdit" unique_id=390182339]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 12.0
+offset_top = 15.0
+offset_right = 1198.0
+offset_bottom = 285.0
+theme_override_colors/font_readonly_color = Color(0.19255614, 0.19255552, 0.19255564, 1)
+theme_override_fonts/font = ExtResource("2_bo6f2")
+theme_override_font_sizes/font_size = 120
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mucci")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7yax1")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_4hia4")
+text = "Stupid Rich People
+"
+editable = false
+scroll_fit_content_height = true
+scroll_fit_content_width = true
+
+[node name="settings_button" type="MenuButton" parent="." unique_id=1823574008]
+offset_left = 400.0
+offset_top = 364.0
+offset_right = 774.0
+offset_bottom = 483.0
+text = "Settings
+"
+flat = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1041680435]
+position = Vector2(577, 325)
+
+[node name="Begin_button" type="Button" parent="." unique_id=1039866244]
+offset_left = 395.0
+offset_top = 222.0
+offset_right = 769.0
+offset_bottom = 341.0
+theme_override_colors/font_disabled_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
+toggle_mode = true
+action_mode = 0
+keep_pressed_outside = true
+text = "Begin"
+script = ExtResource("3_oblfw")
+
+[node name="credits_button" type="MenuButton" parent="." unique_id=1494522267]
+offset_left = 402.0
+offset_top = 507.0
+offset_right = 777.0
+offset_bottom = 622.0
+text = "Credits
+"
+flat = false
+switch_on_hover = true
+script = ExtResource("4_bg542")
+
+[node name="PopupPanel" parent="." unique_id=1121077400 instance=ExtResource("5_x5gwx")]
+visible = false
+
+[node name="Settings" parent="." unique_id=287959811 instance=ExtResource("4_bo6f2")]
+visible = false
+offset_left = -49.0
+offset_top = -10.0
+offset_right = -49.0
+offset_bottom = -10.0
+scale = Vector2(1.7, 1.806)
+
+[connection signal="pressed" from="settings_button" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="Begin_button" to="Begin_button" method="_on_pressed"]
+[connection signal="pressed" from="credits_button" to="." method="_on_credits_button_pressed"]

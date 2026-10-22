@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://7ofu1jmnhi3r"]
+
+[ext_resource type="Texture2D" uid="uid://df5osgwsjfwu7" path="res://Backgrounds/bedroom.jpg" id="1_8rss6"]
+[ext_resource type="Script" uid="uid://cq88p4hsvp8jr" path="res://elements/scripts/firstscene.gd" id="1_q6u20"]
+[ext_resource type="PackedScene" uid="uid://jjwqlfr0vlyt" path="res://popupscenes/text.tscn" id="2_c47tw"]
+[ext_resource type="Texture2D" uid="uid://d0adeaboc163o" path="res://Backgrounds/phoneicon.jpeg" id="2_q6u20"]
+[ext_resource type="PackedScene" uid="uid://nj1rm8t1o08o" path="res://popupscenes/text-two.tscn" id="3_rbe8y"]
+
+[node name="Node2D" type="Node2D" unique_id=1148206713]
+script = ExtResource("1_q6u20")
+
+[node name="Popup" parent="." unique_id=518450593 instance=ExtResource("2_c47tw")]
+position = Vector2i(32, -100)
+visible = false
+
+[node name="Popup2" parent="." unique_id=1024780203 instance=ExtResource("3_rbe8y")]
+visible = false
+
+[node name="WhitePlaceholder" type="Sprite2D" parent="." unique_id=2049376489]
+position = Vector2(574.747, 318.55402)
+scale = Vector2(1.6039482, 1.2153841)
+texture = ExtResource("1_8rss6")
+
+[node name="MenuButton" type="MenuButton" parent="." unique_id=751158424]
+offset_left = 908.00006
+offset_top = 426.0
+offset_right = 1877.9995
+offset_bottom = 1146.0
+scale = Vector2(0.3, 0.3)
+icon = ExtResource("2_q6u20")
+item_count = 1
+popup/item_0/id = 0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2040130734]
+position = Vector2(582, 316)
+
+[connection signal="mouse_entered" from="Popup" to="." method="_on_popup_mouse_entered"]

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dnjtuypxb5yi4"]
+
+[ext_resource type="Texture2D" uid="uid://dejw126gq45vu" path="res://Placeholders/White-Placeholder.png" id="1_dvpi0"]
+
+[node name="Node2D" type="Node2D" unique_id=2051294590]
+
+[node name="WhitePlaceholder" type="Sprite2D" parent="." unique_id=1964273067]
+position = Vector2(568, 296)
+scale = Vector2(2.3079998, 1.29)
+texture = ExtResource("1_dvpi0")
