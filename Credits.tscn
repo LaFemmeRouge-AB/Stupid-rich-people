@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://2de65ecwggw6"]
+
+[ext_resource type="Texture2D" uid="uid://cpm5jewdpxi76" path="res://Placeholders/Black-Placeholder.jpeg" id="1_ynf4x"]
+[ext_resource type="Texture2D" uid="uid://dl1fms1cyj8kh" path="res://Popups/blackX.png" id="2_4qwwl"]
+[ext_resource type="Script" uid="uid://0sxn2gwjggg1" path="res://elements/scripts/close_button.gd" id="3_obosj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4hia4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_obosj"]
+
+[node name="PopupPanel" type="PopupPanel" unique_id=1121077400]
+oversampling_override = 1.0
+position = Vector2i(0, 50)
+size = Vector2i(562, 821)
+visible = true
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4hia4")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=290447829]
+offset_right = 562.0
+offset_bottom = 821.0
+texture = ExtResource("1_ynf4x")
+expand_mode = 1
+stretch_mode = 2
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1817298803]
+offset_left = 1.0
+offset_top = 51.0
+offset_right = 563.0
+offset_bottom = 872.0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_obosj")
+text = "                               Credits
+
+                          Made by: Addy
+      
+				With art and ideas from:
+							Everett
+
+          With help from: Google Photos
+
+
+               Sorry the game sucks i did
+                  it in like under 2 weeks"
+
+[node name="close_button" type="Button" parent="." unique_id=638023892]
+offset_right = 562.0
+offset_bottom = 821.0
+scale = Vector2(0.2, 0.2)
+icon = ExtResource("2_4qwwl")
+flat = true
+script = ExtResource("3_obosj")
+
+[connection signal="pressed" from="close_button" to="close_button" method="_on_close_button_pressed"]
+[connection signal="pressed" from="close_button" to="close_button" method="_on_pressed"]

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cmut4x6exlung"]
+
+[ext_resource type="Texture2D" uid="uid://ctbj8qfcop1g7" path="res://Placeholders/Black-Placeholder.jpeg" id="1_gfjgm"]
+
+[node name="Control" type="Control" unique_id=1708080593]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BlackPlaceholder" type="Sprite2D" parent="." unique_id=168125436]
+position = Vector2(529, 320)
+scale = Vector2(0.6326026, 1.4804147)
+texture = ExtResource("1_gfjgm")

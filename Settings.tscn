@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://chbuddoshxvxl"]
+
+[ext_resource type="Script" uid="uid://co64e4xfiels2" path="res://popupscenes/settings.gd" id="1_n7kjh"]
+[ext_resource type="Texture2D" uid="uid://b25om2w0klm71" path="res://elements/paperpink.webp" id="2_uqkth"]
+[ext_resource type="FontFile" uid="uid://crcq35m854baf" path="res://Fonts/milkyway-demo/Milkyway DEMO.ttf" id="3_av8yj"]
+[ext_resource type="Texture2D" uid="uid://dejw126gq45vu" path="res://Placeholders/White-Placeholder.png" id="4_fde42"]
+[ext_resource type="Texture2D" uid="uid://b78xgmpokjjul" path="res://elements/pink-x-cross-mark-icon.png" id="5_uqkth"]
+[ext_resource type="Texture2D" uid="uid://cmx14icybcg4d" path="res://oldicons/untoggledswitchpink.png" id="6_uqkth"]
+
+[node name="Settings" type="Control" unique_id=287959811]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n7kjh")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1284181103]
+layout_mode = 0
+offset_left = 15.999998
+offset_top = 390.99997
+offset_right = 1059.2935
+offset_bottom = 2209.5786
+rotation = -1.5707964
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_uqkth")
+
+[node name="Label" type="Label" parent="." unique_id=248147220]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 11.0
+offset_right = 546.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(0.9490196, 0.32156864, 0.5019608, 1)
+theme_override_fonts/font = ExtResource("3_av8yj")
+theme_override_font_sizes/font_size = 60
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="close_button" type="Button" parent="." unique_id=649624901]
+layout_mode = 0
+offset_left = 54.999992
+offset_top = 7.0
+offset_right = 575.0
+offset_bottom = 527.0
+scale = Vector2(0.1, 0.1)
+icon = ExtResource("5_uqkth")
+flat = true
+
+[node name="onebutton" type="CheckButton" parent="." unique_id=1750519395]
+layout_mode = 0
+offset_left = 146.99998
+offset_top = 152.0
+offset_right = 1395.0
+offset_bottom = 1360.0
+scale = Vector2(0.1, 0.1)
+icon = ExtResource("6_uqkth")
+
+[node name="twobutton" type="CheckButton" parent="." unique_id=323830649]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 70.0
+offset_right = 1396.0
+offset_bottom = 1278.0
+scale = Vector2(0.1, 0.1)
+icon = ExtResource("6_uqkth")
+
+[node name="Label3" type="Label" parent="." unique_id=2139531014]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 195.0
+offset_right = 575.0
+offset_bottom = 235.0
+theme_override_colors/font_color = Color(0.9490196, 0.32156864, 0.49803922, 1)
+theme_override_fonts/font = ExtResource("3_av8yj")
+theme_override_font_sizes/font_size = 40
+text = "Flashing Lights"
+
+[node name="Label2" type="Label" parent="." unique_id=720576838]
+layout_mode = 0
+offset_left = 373.0
+offset_top = 108.0
+offset_right = 571.0
+offset_bottom = 148.0
+theme_override_colors/font_color = Color(0.9490196, 0.32156864, 0.49803922, 1)
+theme_override_fonts/font = ExtResource("3_av8yj")
+theme_override_font_sizes/font_size = 40
+text = "Jumpscares"
+
+[node name="PopupPanel" type="PopupPanel" parent="." unique_id=774909002]
+oversampling_override = 1.0
+initial_position = 1
+size = Vector2i(1000, 508)
+
+[node name="TextureRect" type="TextureRect" parent="PopupPanel" unique_id=2025028805]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 996.0
+offset_bottom = 504.0
+scale = Vector2(2, 1)
+texture = ExtResource("4_fde42")
+
+[node name="TextEdit" type="TextEdit" parent="PopupPanel" unique_id=1487619740]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 996.0
+offset_bottom = 504.0
+theme_override_colors/search_result_color = Color(0.3019608, 0.3019608, 0.3019608, 0)
+theme_override_colors/search_result_border_color = Color(0.3019608, 0.3019608, 0.3019608, 0)
+theme_override_colors/caret_color = Color(0.8745098, 0.8745098, 0.8745098, 0.003921569)
+theme_override_colors/caret_background_color = Color(0, 0, 0, 0)
+theme_override_colors/font_selected_color = Color(0.9490196, 0.32156864, 0.49803922, 1)
+theme_override_colors/selection_color = Color(0.9490196, 0.32156864, 0.49803922, 1)
+theme_override_colors/font_color = Color(0.9490196, 0.32156864, 0.49803922, 1)
+theme_override_colors/font_readonly_color = Color(0.9490196, 0.32156864, 0.49803922, 1)
+theme_override_colors/font_placeholder_color = Color(0.8745098, 0.8745098, 0.8745098, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_colors/background_color = Color(0, 0, 0, 0)
+theme_override_colors/current_line_color = Color(0.2509804, 0.2509804, 0.25882354, 0)
+theme_override_colors/word_highlighted_color = Color(0.5019608, 0.5019608, 0.5019608, 0)
+theme_override_fonts/font = ExtResource("3_av8yj")
+theme_override_font_sizes/font_size = 26
+text = "You can't do that man. 
+
+
+There's no game without those.
+
+Sorry :(
+
+so like... if you cant handle it you might wanna find a new game.
+
+There'll be a good one on roblox or smth
+
+by that i mean a nonscary one
+
+that was a diss"
+editable = false
+virtual_keyboard_enabled = false
+scroll_smooth = true
+
+[connection signal="pressed" from="close_button" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="onebutton" to="." method="_on_onebutton_pressed"]
+[connection signal="pressed" from="twobutton" to="." method="_on_twobutton_pressed"]

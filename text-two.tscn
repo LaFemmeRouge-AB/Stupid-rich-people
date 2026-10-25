@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://nj1rm8t1o08o"]
+
+[ext_resource type="Texture2D" uid="uid://cqxb5ssmrbai4" path="res://Popups/second-text.png" id="1_036ec"]
+[ext_resource type="Texture2D" uid="uid://d0adeaboc163o" path="res://Backgrounds/phoneicon.jpeg" id="2_6y5hg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4ly8m"]
+
+[node name="Popup" type="PopupPanel" unique_id=1024780203]
+oversampling_override = 1.0
+size = Vector2i(970, 1716)
+visible = true
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4ly8m")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1860471590]
+offset_right = 970.0
+offset_bottom = 1716.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_036ec")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect" unique_id=211224202]
+show_behind_parent = true
+layout_mode = 0
+offset_left = -66.66672
+offset_top = -163.3335
+offset_right = 3774.9993
+offset_bottom = 7144.999
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_6y5hg")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=41309957]
+position = Vector2(187, 807)
