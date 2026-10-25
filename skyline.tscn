@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cr76dt1s7bxx"]
+
+[ext_resource type="Texture2D" uid="uid://cpcwcrrxeufsp" path="res://Backgrounds/1000_F_231078286_ubjlpWYQblBleXjLjNHZKNZwqCEXRNNC.jpg" id="1_8kutf"]
+[ext_resource type="Script" uid="uid://bnb8rgqwfnicq" path="res://skyline.gd" id="1_dfaij"]
+[ext_resource type="Texture2D" uid="uid://cktl0hm824q4c" path="res://elements/textbox.png" id="2_dfaij"]
+[ext_resource type="FontFile" uid="uid://budn237aiq553" path="res://Fonts/squarefont/Square.ttf" id="3_ff27u"]
+
+[node name="Node2D" type="Node2D" unique_id=1054206847]
+position = Vector2(-1, 34)
+script = ExtResource("1_dfaij")
+
+[node name="skyline" type="Sprite2D" parent="." unique_id=1498034803]
+position = Vector2(583, 323.5)
+scale = Vector2(1.156, 0.8653334)
+texture = ExtResource("1_8kutf")
+
+[node name="Textbox" type="Sprite2D" parent="." unique_id=1712366115]
+position = Vector2(569, 597)
+scale = Vector2(0.74421304, 0.4175347)
+texture = ExtResource("2_dfaij")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1083180727]
+offset_left = 18.0
+offset_top = 526.0
+offset_right = 1146.0
+offset_bottom = 628.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_readonly_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
+theme_override_fonts/font = ExtResource("3_ff27u")
+theme_override_font_sizes/font_size = 40
+text = "This is a nice view, kind of a shame it'll be dark the rest 
+of my shift."
+editable = false
+metadata/_edit_use_anchors_ = true
+
+[node name="TextEdit2" type="TextEdit" parent="." unique_id=872375556]
+visible = false
+offset_left = 18.0
+offset_top = 526.0
+offset_right = 1146.0
+offset_bottom = 628.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_readonly_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
+theme_override_fonts/font = ExtResource("3_ff27u")
+theme_override_font_sizes/font_size = 40
+text = "I guess i should start working. the sooner i can leave
+the better. the vibes here are kinda off."
+editable = false
+
+[node name="Label" type="Label" parent="." unique_id=1507495238]
+offset_left = 117.0
+offset_top = 454.0
+offset_right = 327.0
+offset_bottom = 496.0
+theme_override_fonts/font = ExtResource("3_ff27u")
+theme_override_font_sizes/font_size = 39
+text = "You:"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="." unique_id=1689057412]
+offset_right = 1169.0
+offset_bottom = 648.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

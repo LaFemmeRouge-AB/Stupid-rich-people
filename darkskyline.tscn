@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://c1d87va8tvwrf"]
+
+[ext_resource type="Texture2D" uid="uid://im3g83kvbslk" path="res://Backgrounds/skylinedark.webp" id="1_sat0d"]
+[ext_resource type="Script" uid="uid://10bi2t156v67" path="res://darkskyline.gd" id="1_xmvda"]
+[ext_resource type="Texture2D" uid="uid://cpm5jewdpxi76" path="res://Placeholders/Black-Placeholder.jpeg" id="2_nvql5"]
+[ext_resource type="Texture2D" uid="uid://cktl0hm824q4c" path="res://elements/textbox.png" id="2_ujib2"]
+[ext_resource type="FontFile" uid="uid://budn237aiq553" path="res://Fonts/squarefont/Square.ttf" id="3_xmvda"]
+[ext_resource type="Texture2D" uid="uid://7axeu42vup2s" path="res://elements/twinsr.png" id="4_urjfs"]
+
+[node name="Node2D" type="Node2D" unique_id=1277898795]
+script = ExtResource("1_xmvda")
+
+[node name="BlackPlaceholder" type="Sprite2D" parent="." unique_id=725850448]
+position = Vector2(566.5, 375.49997)
+scale = Vector2(2.7599277, 1.6480144)
+texture = ExtResource("2_nvql5")
+
+[node name="Skylinedark" type="Sprite2D" parent="." unique_id=829731455]
+position = Vector2(575.5, 353.5)
+scale = Vector2(1.7984377, 1.767507)
+texture = ExtResource("1_sat0d")
+
+[node name="Twinsr" type="Sprite2D" parent="." unique_id=1869730356]
+visible = false
+position = Vector2(575, 344.25)
+scale = Vector2(0.3243634, 0.27625868)
+texture = ExtResource("4_urjfs")
+
+[node name="Textbox" type="Sprite2D" parent="." unique_id=245336059]
+position = Vector2(557, 626.25)
+scale = Vector2(0.7384259, 0.4459635)
+texture = ExtResource("2_ujib2")
+
+[node name="Label" type="Label" parent="." unique_id=1757095125]
+offset_left = 105.0
+offset_top = 483.0
+offset_right = 315.0
+offset_bottom = 525.0
+theme_override_fonts/font = ExtResource("3_xmvda")
+theme_override_font_sizes/font_size = 39
+text = "You:"
+metadata/_edit_use_anchors_ = true
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=281315938]
+offset_left = 18.0
+offset_top = 533.0
+offset_right = 1146.0
+offset_bottom = 635.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_readonly_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
+theme_override_fonts/font = ExtResource("3_xmvda")
+theme_override_font_sizes/font_size = 40
+text = "Woah it's dark already??? i guess i got to get a move
+on then."
+editable = false
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="." unique_id=921669792]
+offset_left = -7.0
+offset_top = 32.0
+offset_right = 1162.0
+offset_bottom = 680.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

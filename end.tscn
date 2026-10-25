@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://oig42icsln1y"]
+
+[ext_resource type="Texture2D" uid="uid://dxi3svoknx0sx" path="res://Backgrounds/fadedblack.jpeg" id="1_egc6y"]
+[ext_resource type="FontFile" uid="uid://budn237aiq553" path="res://Fonts/squarefont/Square.ttf" id="2_lt2ag"]
+
+[node name="Node2D" type="Node2D" unique_id=2037176686]
+position = Vector2(66, 42)
+
+[node name="Fadedblack" type="Sprite2D" parent="." unique_id=833679762]
+position = Vector2(585, 307.5)
+scale = Vector2(2.1246612, 1.9864498)
+texture = ExtResource("1_egc6y")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1910338837]
+offset_left = -32.0
+offset_top = -38.0
+offset_right = 1090.0
+offset_bottom = 604.0
+theme_override_fonts/font = ExtResource("2_lt2ag")
+theme_override_font_sizes/font_size = 100
+text = "Sorry about this game
+
+i lowk spent a ton of 
+time on that one inbox
+ thing then got tired
+ and busy"
+metadata/_edit_use_anchors_ = true

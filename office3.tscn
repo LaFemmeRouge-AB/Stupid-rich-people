@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://drng85m60tfl7"]
+
+[ext_resource type="Texture2D" uid="uid://bxbqiuce2jstg" path="res://Backgrounds/officex.jpg" id="1_ebmeg"]
+[ext_resource type="Script" uid="uid://pcwm7ep567ws" path="res://office_3.gd" id="1_k026y"]
+[ext_resource type="Texture2D" uid="uid://cktl0hm824q4c" path="res://elements/textbox.png" id="2_ypwjk"]
+[ext_resource type="FontFile" uid="uid://budn237aiq553" path="res://Fonts/squarefont/Square.ttf" id="3_cj0mw"]
+
+[node name="Node2D" type="Node2D" unique_id=1124417761]
+position = Vector2(-8, 0)
+script = ExtResource("1_k026y")
+
+[node name="Officex" type="Sprite2D" parent="." unique_id=966774409]
+position = Vector2(597, 371)
+scale = Vector2(0.61562496, 0.6833334)
+texture = ExtResource("1_ebmeg")
+
+[node name="Textbox" type="Sprite2D" parent="." unique_id=975913904]
+position = Vector2(579.00006, 670)
+scale = Vector2(0.74291086, 0.5486111)
+texture = ExtResource("2_ypwjk")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=9363942]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="TextEdit" type="TextEdit" parent="TextEdit" unique_id=1741963161]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.25
+anchor_top = 4.0
+anchor_right = 2.25
+anchor_bottom = 10.5
+offset_left = 18.0
+offset_top = 526.0
+offset_right = 1146.0
+offset_bottom = 628.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_readonly_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
+theme_override_fonts/font = ExtResource("3_cj0mw")
+theme_override_font_sizes/font_size = 40
+text = "i need to get out of here. as soon as possible. all that
+is left to do is shut down so i should be fine. let's get
+this over with."
+editable = false
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="TextEdit" unique_id=937349743]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.375
+anchor_top = 3.875
+anchor_right = -0.375
+anchor_bottom = 3.875
+offset_left = 117.0
+offset_top = 454.0
+offset_right = 327.0
+offset_bottom = 496.0
+theme_override_fonts/font = ExtResource("3_cj0mw")
+theme_override_font_sizes/font_size = 39
+text = "You:"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="." unique_id=240145287]
+offset_right = 1188.0
+offset_bottom = 734.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

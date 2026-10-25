@@ -1,0 +1,329 @@
+[gd_scene format=3 uid="uid://dsmdt1cx43quy"]
+
+[ext_resource type="Script" uid="uid://f42mvjfjvcs1" path="res://inbox.gd" id="1_6pwad"]
+[ext_resource type="Texture2D" uid="uid://cxl2eusuk45fo" path="res://elements/inbox.png" id="1_tgxw3"]
+[ext_resource type="Texture2D" uid="uid://dt347tshd0wcv" path="res://unhighlighted text/Screenshot 2026-10-21 at 10.39.30 PM.png" id="2_6pwad"]
+[ext_resource type="Texture2D" uid="uid://dljtxbl4kwfov" path="res://unhighlighted text/Screenshot 2026-10-21 at 10.39.40 PM.png" id="3_tmui8"]
+[ext_resource type="Texture2D" uid="uid://ek4kslfr3ipv" path="res://unhighlighted text/Screenshot 2026-10-21 at 10.40.22 PM.png" id="4_dqpqr"]
+[ext_resource type="Script" uid="uid://clnq2615knf4q" path="res://business.gd" id="4_hgic6"]
+[ext_resource type="Texture2D" uid="uid://x41v37w114i4" path="res://emails/Screenshot 2026-10-21 at 10.43.32 PM.png" id="4_srklj"]
+[ext_resource type="Texture2D" uid="uid://cppajb3irmgu1" path="res://Highlightedtext/Screenshot 2026-10-21 at 10.41.03 PM.png" id="5_7m18y"]
+[ext_resource type="Texture2D" uid="uid://60yat7dgtpvh" path="res://unhighlighted text/Screenshot 2026-10-21 at 10.40.29 PM.png" id="5_qhtvm"]
+[ext_resource type="Texture2D" uid="uid://d03lib7aojm78" path="res://emails/Screenshot 2026-10-21 at 10.43.44 PM.png" id="6_ts5er"]
+[ext_resource type="Texture2D" uid="uid://duv1dtb3kw8sk" path="res://unhighlighted text/Screenshot 2026-10-21 at 10.40.36 PM.png" id="6_ww5qt"]
+[ext_resource type="Texture2D" uid="uid://d053ul8y5pypu" path="res://unhighlighted text/Screenshot 2026-10-21 at 10.40.43 PM.png" id="7_srklj"]
+[ext_resource type="Texture2D" uid="uid://xws3qga6xgtp" path="res://emails/Screenshot 2026-10-21 at 10.44.02 PM.png" id="8_64qsq"]
+[ext_resource type="Texture2D" uid="uid://c2lo3h22m6i56" path="res://unhighlighted text/Screenshot 2026-10-21 at 10.40.51 PM.png" id="8_ts5er"]
+[ext_resource type="Script" uid="uid://s2etryw5y41n" path="res://shake.gd" id="8_yh0gv"]
+[ext_resource type="Texture2D" uid="uid://doxce8fmi6je3" path="res://emails/Screenshot 2026-10-21 at 10.44.15 PM.png" id="10_64qsq"]
+[ext_resource type="Texture2D" uid="uid://bxdtodnkjciwo" path="res://Highlightedtext/Screenshot 2026-10-21 at 10.42.28 PM.png" id="10_gsw55"]
+[ext_resource type="Texture2D" uid="uid://b3metx5e0s6q4" path="res://emails/Screenshot 2026-10-21 at 10.44.23 PM.png" id="11_hgic6"]
+[ext_resource type="Texture2D" uid="uid://c1v5ypqemur4m" path="res://emails/Screenshot 2026-10-21 at 10.44.29 PM.png" id="13_7m18y"]
+[ext_resource type="Script" uid="uid://c2afb1dc0vyvt" path="res://book.gd" id="13_gsw55"]
+[ext_resource type="Texture2D" uid="uid://dbem7mwnaedbd" path="res://Highlightedtext/Screenshot 2026-10-21 at 10.41.49 PM.png" id="14_hskwf"]
+[ext_resource type="Texture2D" uid="uid://ctnbdnrnsn1er" path="res://addons/Screenshot 2026-10-21 at 11.09.12 PM.png" id="15_ts5er"]
+[ext_resource type="Script" uid="uid://bvqojpblf18gg" path="res://order.gd" id="17_wwoqw"]
+[ext_resource type="Texture2D" uid="uid://dfpn2vcink15t" path="res://Highlightedtext/Screenshot 2026-10-21 at 10.41.59 PM.png" id="18_hus6l"]
+[ext_resource type="Script" uid="uid://cq5cgjqbaftjk" path="res://game.gd" id="21_pk381"]
+[ext_resource type="Texture2D" uid="uid://dcya7m2a8h505" path="res://Highlightedtext/Screenshot 2026-10-21 at 10.42.06 PM.png" id="22_runwl"]
+[ext_resource type="Script" uid="uid://dum0ni7pqttxb" path="res://movie.gd" id="24_53ae1"]
+[ext_resource type="Script" uid="uid://crblo8un6nqcr" path="res://reward.gd" id="26_fq2qy"]
+[ext_resource type="Texture2D" uid="uid://bpts850cqvipa" path="res://Highlightedtext/Screenshot 2026-10-21 at 10.42.15 PM.png" id="26_h584i"]
+[ext_resource type="FontFile" uid="uid://b1pbj0i7kfp3r" path="res://Fonts/motion-control/MotionControl-Bold.otf" id="30_h584i"]
+[ext_resource type="Texture2D" uid="uid://dkeq6haq1cosd" path="res://elements/trash.png" id="31_umlc1"]
+[ext_resource type="Script" uid="uid://bj6swt7omerv" path="res://trash.gd" id="32_j1a6f"]
+[ext_resource type="Texture2D" uid="uid://ckj2rrc7cybce" path="res://elements/trah.png" id="33_7ic8k"]
+[ext_resource type="Script" uid="uid://coc8dc3omjur6" path="res://area_2d_2.gd" id="33_j2r2c"]
+[ext_resource type="Texture2D" uid="uid://kx8ttneigenq" path="res://elements/message.png" id="35_g37j6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uf84l"]
+size = Vector2(1805.5557, 412.07486)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_itbas"]
+size = Vector2(741.42706, 1025.9382)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0rqj0"]
+size = Vector2(1376.936, 1470.0007)
+
+[node name="inbox" type="Control" unique_id=1962114795]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 61.0
+offset_right = 3.0
+offset_bottom = 61.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+mouse_filter = 2
+script = ExtResource("1_6pwad")
+
+[node name="main" type="TextureRect" parent="." unique_id=946416722]
+layout_mode = 0
+offset_left = -4.9999995
+offset_top = -103.33331
+offset_right = 3415.0
+offset_bottom = 2040.6667
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_tgxw3")
+
+[node name="bemail" type="TextureRect" parent="." unique_id=1405384073]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 688.3334
+offset_top = -44.866745
+offset_right = 2059.0815
+offset_bottom = 1201.5958
+scale = Vector2(0.98, 0.98)
+texture = ExtResource("4_srklj")
+expand_mode = 1
+
+[node name="business" type="Sprite2D" parent="." unique_id=2057709969 groups=["emails"]]
+position = Vector2(463.33334, 13.333252)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_6pwad")
+script = ExtResource("4_hgic6")
+normal = ExtResource("2_6pwad")
+clicked = ExtResource("5_7m18y")
+
+[node name="Area2D" type="Area2D" parent="business" unique_id=1128097101 groups=["emails"]]
+position = Vector2(1, 14)
+scale = Vector2(0.6, 0.6)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="business/Area2D" unique_id=1225955012]
+position = Vector2(-20.185303, -53.63965)
+scale = Vector2(0.6, 0.6)
+shape = SubResource("RectangleShape2D_uf84l")
+
+[node name="shake" type="Sprite2D" parent="." unique_id=1640749194 groups=["emails"]]
+position = Vector2(468.3333, 110.00001)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_tmui8")
+script = ExtResource("8_yh0gv")
+normal = ExtResource("8_ts5er")
+clicked = ExtResource("10_gsw55")
+
+[node name="Area2D" type="Area2D" parent="shake" unique_id=1392759730 groups=["emails"]]
+position = Vector2(1, 14)
+scale = Vector2(0.6, 0.6)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="shake/Area2D" unique_id=386549765]
+position = Vector2(-34.07395, -51.110867)
+scale = Vector2(0.6, 0.6)
+shape = SubResource("RectangleShape2D_uf84l")
+
+[node name="semail" type="TextureRect" parent="." unique_id=1127416372]
+visible = false
+layout_mode = 0
+offset_left = 683.33325
+offset_top = -36.66658
+offset_right = 2035.0
+offset_bottom = 1173.3333
+texture = ExtResource("6_ts5er")
+expand_mode = 1
+
+[node name="book" type="Sprite2D" parent="." unique_id=996200460 groups=["emails"]]
+position = Vector2(471.66663, 205)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_dqpqr")
+script = ExtResource("13_gsw55")
+normal = ExtResource("4_dqpqr")
+clicked = ExtResource("14_hskwf")
+
+[node name="Area2D" type="Area2D" parent="book" unique_id=1828272374 groups=["emails"]]
+position = Vector2(1, 14)
+scale = Vector2(0.6, 0.6)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="book/Area2D" unique_id=1991955145 groups=["emails"]]
+position = Vector2(-24.814808, -37.222115)
+scale = Vector2(0.6, 0.6)
+shape = SubResource("RectangleShape2D_uf84l")
+
+[node name="boemail" type="TextureRect" parent="." unique_id=215137959]
+visible = false
+layout_mode = 0
+offset_left = 680.0
+offset_top = -43.333305
+offset_right = 2028.3333
+offset_bottom = 1175.0
+texture = ExtResource("8_64qsq")
+expand_mode = 1
+
+[node name="order" type="Sprite2D" parent="." unique_id=1101790372 groups=["emails"]]
+position = Vector2(471.66663, 298.3333)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_qhtvm")
+script = ExtResource("17_wwoqw")
+normal = ExtResource("5_qhtvm")
+clicked = ExtResource("18_hus6l")
+
+[node name="Area2D" type="Area2D" parent="order" unique_id=834839131 groups=["emails"]]
+position = Vector2(1, 14)
+scale = Vector2(0.6, 0.6)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="order/Area2D" unique_id=1387463167 groups=["emails"]]
+position = Vector2(-20.185204, -23.333166)
+scale = Vector2(0.6, 0.6)
+shape = SubResource("RectangleShape2D_uf84l")
+
+[node name="oemail" type="TextureRect" parent="." unique_id=1507775076]
+visible = false
+layout_mode = 0
+offset_left = 679.9999
+offset_top = -33.333305
+offset_right = 2036.6666
+offset_bottom = 1185.0
+texture = ExtResource("10_64qsq")
+expand_mode = 1
+
+[node name="game" type="Sprite2D" parent="." unique_id=1914166026 groups=["emails"]]
+position = Vector2(460, 488.33325)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_ww5qt")
+script = ExtResource("21_pk381")
+normal = ExtResource("6_ww5qt")
+clicked = ExtResource("22_runwl")
+
+[node name="Area2D" type="Area2D" parent="game" unique_id=946795343 groups=["emails"]]
+position = Vector2(1, 14)
+scale = Vector2(0.6, 0.6)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="game/Area2D" unique_id=1569553785 groups=["emails"]]
+position = Vector2(-34.074062, -23.333399)
+scale = Vector2(0.6, 0.6)
+shape = SubResource("RectangleShape2D_uf84l")
+
+[node name="gemail" type="TextureRect" parent="." unique_id=600969303]
+visible = false
+layout_mode = 0
+offset_left = 678.3333
+offset_top = -33.333336
+offset_right = 2041.6665
+offset_bottom = 1176.6665
+texture = ExtResource("11_hgic6")
+expand_mode = 1
+
+[node name="reward" type="Sprite2D" parent="." unique_id=1922025546 groups=["emails"]]
+position = Vector2(466.66656, 393.33334)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("8_ts5er")
+script = ExtResource("26_fq2qy")
+normal = ExtResource("8_ts5er")
+clicked = ExtResource("10_gsw55")
+
+[node name="Area2D" type="Area2D" parent="reward" unique_id=220894237 groups=["emails"]]
+position = Vector2(1, 14)
+scale = Vector2(0.6, 0.6)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reward/Area2D" unique_id=1675608988 groups=["emails"]]
+position = Vector2(-20.185263, -18.703314)
+scale = Vector2(0.6, 0.6)
+shape = SubResource("RectangleShape2D_uf84l")
+
+[node name="movie" type="Sprite2D" parent="." unique_id=168082436 groups=["emails"]]
+position = Vector2(456.66663, 588.33325)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("7_srklj")
+script = ExtResource("24_53ae1")
+normal = ExtResource("7_srklj")
+clicked = ExtResource("26_h584i")
+
+[node name="Area2D" type="Area2D" parent="movie" unique_id=1678539189 groups=["emails"]]
+position = Vector2(1, 14)
+scale = Vector2(0.6, 0.6)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="movie/Area2D" unique_id=952810684 groups=["emails"]]
+position = Vector2(-20.185051, -37.222046)
+scale = Vector2(0.6, 0.6)
+shape = SubResource("RectangleShape2D_uf84l")
+
+[node name="memail" type="TextureRect" parent="." unique_id=38863227]
+visible = false
+layout_mode = 0
+offset_left = 678.3333
+offset_top = -36.666664
+offset_right = 2041.6665
+offset_bottom = 1178.3334
+texture = ExtResource("13_7m18y")
+expand_mode = 1
+
+[node name="remail" type="TextureRect" parent="." unique_id=1260466743]
+visible = false
+layout_mode = 0
+offset_left = 685.0
+offset_top = -33.333336
+offset_right = 2041.6665
+offset_bottom = 1174.9999
+texture = ExtResource("15_ts5er")
+expand_mode = 1
+
+[node name="progress_bar" type="ProgressBar" parent="." unique_id=185087403]
+layout_mode = 0
+offset_left = 16.666666
+offset_top = 798.3334
+offset_right = 653.3334
+offset_bottom = 961.6668
+theme_override_colors/font_color = Color(0.3269963, 0.59526896, 0.6397251, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("30_h584i")
+theme_override_font_sizes/font_size = 60
+
+[node name="Label" type="Label" parent="." unique_id=1941874039]
+layout_mode = 0
+offset_left = 221.66666
+offset_top = 753.3333
+offset_right = 472.66666
+offset_bottom = 795.3333
+theme_override_colors/font_color = Color(0.3254902, 0.59607846, 0.6392157, 1)
+theme_override_fonts/font = ExtResource("30_h584i")
+theme_override_font_sizes/font_size = 30
+text = "Drag to trash to delete!"
+
+[node name="trash" type="Sprite2D" parent="." unique_id=434703298 groups=["trash"]]
+position = Vector2(111.66666, 703.33325)
+scale = Vector2(0.11014794, 0.108843595)
+texture = ExtResource("31_umlc1")
+script = ExtResource("32_j1a6f")
+normal = ExtResource("31_umlc1")
+hover = ExtResource("33_7ic8k")
+
+[node name="Area2D" type="Area2D" parent="trash" unique_id=1718311280]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trash/Area2D" unique_id=1587646143]
+position = Vector2(7.5655518, 7.65625)
+scale = Vector2(1, 0.9999999)
+shape = SubResource("RectangleShape2D_itbas")
+
+[node name="Area2D2" type="Area2D" parent="trash" unique_id=1775792160]
+script = ExtResource("33_j2r2c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trash/Area2D2" unique_id=525706850]
+position = Vector2(22.696777, -15.3125)
+scale = Vector2(1, 0.9999999)
+shape = SubResource("RectangleShape2D_0rqj0")
+
+[node name="textmain" type="TextureRect" parent="." unique_id=1649918972]
+visible = false
+layout_mode = 0
+offset_left = 411.66666
+offset_top = -245.0
+offset_right = 1598.3334
+offset_bottom = 1150.6667
+texture = ExtResource("35_g37j6")
+expand_mode = 1
+
+[connection signal="input_event" from="business/Area2D" to="business" method="_on_area_2d_input_event"]
+[connection signal="input_event" from="shake/Area2D" to="shake" method="_on_area_2d_input_event"]
+[connection signal="input_event" from="book/Area2D" to="book" method="_on_area_2d_input_event"]
+[connection signal="input_event" from="order/Area2D" to="order" method="_on_area_2d_input_event"]
+[connection signal="input_event" from="game/Area2D" to="game" method="_on_area_2d_input_event"]
+[connection signal="input_event" from="reward/Area2D" to="reward" method="_on_area_2d_input_event"]
+[connection signal="input_event" from="movie/Area2D" to="movie" method="_on_area_2d_input_event"]
+[connection signal="area_entered" from="trash/Area2D" to="trash" method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="trash/Area2D" to="trash" method="_on_area_2d_body_entered"]
+[connection signal="mouse_entered" from="trash/Area2D" to="trash" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="trash/Area2D" to="trash" method="_on_area_2d_mouse_exited"]
+[connection signal="mouse_entered" from="trash/Area2D2" to="trash/Area2D2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="trash/Area2D2" to="trash/Area2D2" method="_on_mouse_exited"]

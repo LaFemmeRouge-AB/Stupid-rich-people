@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://b18gevwsqt31n"]
+
+[ext_resource type="Script" uid="uid://ctj170idq6l72" path="res://lights.gd" id="1_ljv1u"]
+[ext_resource type="Texture2D" uid="uid://dx4oxmki857ug" path="res://Backgrounds/wallsss.jpeg" id="1_ufa1q"]
+[ext_resource type="Texture2D" uid="uid://bfhn81mj8has6" path="res://Backgrounds/lightswitchh.png" id="2_g8bhh"]
+[ext_resource type="Texture2D" uid="uid://cpm5jewdpxi76" path="res://Placeholders/Black-Placeholder.jpeg" id="4_oa47t"]
+[ext_resource type="Texture2D" uid="uid://7axeu42vup2s" path="res://elements/twinsr.png" id="5_oa47t"]
+[ext_resource type="FontFile" uid="uid://budn237aiq553" path="res://Fonts/squarefont/Square.ttf" id="6_lqmqf"]
+
+[node name="Node2D" type="Node2D" unique_id=1116245304]
+script = ExtResource("1_ljv1u")
+
+[node name="Wallsss" type="Sprite2D" parent="." unique_id=1901726905]
+position = Vector2(617.25, 346.75)
+scale = Vector2(2.1097758, 2.1528573)
+texture = ExtResource("1_ufa1q")
+
+[node name="Button" type="Button" parent="." unique_id=780602169]
+offset_left = 346.0
+offset_top = 24.0
+offset_right = 1334.0
+offset_bottom = 1012.0
+scale = Vector2(0.6, 0.6)
+icon = ExtResource("2_g8bhh")
+flat = true
+
+[node name="black" type="TextureRect" parent="." unique_id=1007616647]
+visible = false
+offset_left = -12.0
+offset_top = -34.0
+offset_right = 1378.0
+offset_bottom = 761.0
+texture = ExtResource("4_oa47t")
+
+[node name="Twinsr" type="Sprite2D" parent="." unique_id=1762864056]
+visible = false
+position = Vector2(688.5, 425.37503)
+scale = Vector2(0.35011575, 0.30761722)
+texture = ExtResource("5_oa47t")
+
+[node name="died" type="TextEdit" parent="." unique_id=1368067331]
+visible = false
+offset_left = 4.0
+offset_top = 174.0
+offset_right = 1174.0
+offset_bottom = 467.0
+theme_override_fonts/font = ExtResource("6_lqmqf")
+theme_override_font_sizes/font_size = 280
+text = "YOU DIED"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

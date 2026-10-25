@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://b3wmpqjad6akt"]
+
+[ext_resource type="Script" uid="uid://bnyuju3753otg" path="res://office.gd" id="1_43ocd"]
+[ext_resource type="Texture2D" uid="uid://bxbqiuce2jstg" path="res://Backgrounds/officex.jpg" id="1_g3mwp"]
+[ext_resource type="Texture2D" uid="uid://cktl0hm824q4c" path="res://elements/textbox.png" id="3_hsito"]
+[ext_resource type="FontFile" uid="uid://budn237aiq553" path="res://Fonts/squarefont/Square.ttf" id="4_lcnwv"]
+[ext_resource type="Texture2D" uid="uid://bbxdvjoifxtth" path="res://elements/phone.png" id="5_wruqr"]
+[ext_resource type="Texture2D" uid="uid://dfp5m474ajkq" path="res://elements/bossinbox.png" id="6_lcwox"]
+[ext_resource type="Texture2D" uid="uid://coi42pgjt4dar" path="res://elements/postertask.png" id="7_3xqf3"]
+[ext_resource type="Texture2D" uid="uid://yslh4rv2smea" path="res://elements/lightstask.png" id="8_70x1r"]
+
+[node name="Node2D" type="Node2D" unique_id=1570585354]
+position = Vector2(-1, 43)
+script = ExtResource("1_43ocd")
+
+[node name="Officex" type="Sprite2D" parent="." unique_id=1237851769]
+position = Vector2(586.5, 321)
+scale = Vector2(0.60989577, 0.6111111)
+texture = ExtResource("1_g3mwp")
+
+[node name="Textbox2" type="Sprite2D" parent="." unique_id=112201431]
+position = Vector2(570, 600)
+scale = Vector2(0.74421304, 0.4175347)
+texture = ExtResource("3_hsito")
+
+[node name="Label" type="Label" parent="." unique_id=705626864]
+offset_left = 117.0
+offset_top = 454.0
+offset_right = 327.0
+offset_bottom = 496.0
+theme_override_fonts/font = ExtResource("4_lcnwv")
+theme_override_font_sizes/font_size = 39
+text = "You:"
+metadata/_edit_use_anchors_ = true
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1803073105]
+offset_left = 18.0
+offset_top = 526.0
+offset_right = 1146.0
+offset_bottom = 628.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_readonly_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
+theme_override_fonts/font = ExtResource("4_lcnwv")
+theme_override_font_sizes/font_size = 40
+text = "I guess this is the office then. splitting with a security
+office isn't that out of the norm. what's my tasks?"
+editable = false
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="." unique_id=1807252834]
+offset_right = 1169.0
+offset_bottom = 648.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Phone" type="TextureRect" parent="." unique_id=1849434741]
+visible = false
+offset_left = 209.0
+offset_top = -24.0
+offset_right = 873.0
+offset_bottom = 642.0
+texture = ExtResource("5_wruqr")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Phone" unique_id=1921510404]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.33900002
+anchor_bottom = 0.13800001
+offset_left = 192.0
+offset_top = -2.0
+offset_right = 247.90399
+offset_bottom = 308.09198
+texture = ExtResource("6_lcwox")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Phone" unique_id=74347907]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.24400002
+anchor_bottom = 0.316
+offset_left = 191.0
+offset_top = 154.0
+offset_right = 310.984
+offset_bottom = 330.544
+texture = ExtResource("7_3xqf3")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="Phone" unique_id=1982073451]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 190.0
+offset_top = 299.0
+offset_right = 470.0
+offset_bottom = 697.0
+texture = ExtResource("8_70x1r")
+expand_mode = 1
+
+[node name="Button2" type="Button" parent="." unique_id=1547076010]
+visible = false
+offset_left = 865.0
+offset_top = 540.0
+offset_right = 1138.0
+offset_bottom = 628.0
+text = "Start first task?"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
