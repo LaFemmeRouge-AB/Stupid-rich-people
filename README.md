@@ -12,3 +12,8 @@ Then you must turn off the lights, and yk obviously that doesn't work and you di
 DISCLAIMER:
 
 The main points didn't work somehow, there used to be twins that appeared as bad jumpscares and also all the time was spent on all the like dragging and then the rest kinda got pushed aside. so. sorry....
+
+
+
+
+I built this off a whim I had in third-period French class. there was a ton of lore but lowk forgot abt it
