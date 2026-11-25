@@ -1,4 +1,10 @@
 # Stupid-Rich-People-
+
+You go from scene to scene, clicking the clearly marked buttons to go through each task, everything should be self-explanatory in how to play as it is only clicking buttons and dragging stuff. You can press space to go through the text as well.
+
+
+
+
 You're a substitute janitor at a luxurious office building, but everything seems wrong.
 
 You have three quick tasks to do in which some bizarre things keep happening. (The twins wont load in but there used to be some lore). 
@@ -12,8 +18,6 @@ Then you must turn off the lights, and yk obviously that doesn't work and you di
 DISCLAIMER:
 
 The main points didn't work somehow, there used to be twins that appeared as bad jumpscares and also all the time was spent on all the like dragging and then the rest kinda got pushed aside. so. sorry....
-
-
 
 
 I built this off a whim I had in third-period French class. there was a ton of lore but lowk forgot abt it
